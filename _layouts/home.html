@@ -6,7 +6,7 @@ layout: default
   <div class="col-md-6">
     {{ content }}
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 d-flex justify-content-end">
     <img src="{{ site.github.url }}/assets/img/home.jpeg" alt="Home" class="home-photo">
   </div>
 </div>
@@ -15,9 +15,19 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">
+      {% if page.lang == 'pt' %}Atualizações{% else %}Updates{% endif %}
+    </h3>
     {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>
+        <a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a>
+        -
+        {% if page.lang == 'pt' %}
+          {{ post.date | date: "%-d de %B de %Y" }}
+        {% else %}
+          {{ post.date | date: "%B %-d, %Y" }}
+        {% endif %}
+      </p>
     {% endfor %}
   </div>
 </div>

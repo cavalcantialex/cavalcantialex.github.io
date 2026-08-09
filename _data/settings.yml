@@ -2,8 +2,12 @@ menu:
 #- {name: 'people', url: '/people'}
 #- {name: 'publications', url: '/publications'}
 #- {name: 'courses', url: '/courses'}
-- {name: 'C.V.', url: '/cv'}
-- {name: 'Contact', url: '/contact'}
+- name: 'C.V.'
+  name_pt: 'C.V.'
+  url: '/cv'
+- name: 'Contact'
+  name_pt: 'Contato'
+  url: '/contact'
 
 #people:
 #- {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
@@ -21,4 +25,13 @@ social:
 - {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=MqC5xfEAAAAJ&hl=en'}
 
 contacts:
-- {name: 'Alexsandra Cavalcanti', title: 'Ph.D. Student', department: 'Political Science', institution: 'University of Rochester', institution_address: 'Harkness Hall, Rochester-NY', email: 'acavalca@ur.rochester.edu', image: 'assets/img/contact.jpeg'}
+- name: 'Alexsandra Cavalcanti'
+  title: 'Ph.D. Student'
+  title_pt: 'Doutoranda'
+  department: 'Political Science'
+  department_pt: 'Ciência Política'
+  institution: 'University of Rochester'
+  institution_pt: 'Universidade de Rochester'
+  institution_address: 'Harkness Hall, Rochester-NY'
+  email: 'acavalca@ur.rochester.edu'
+  image: 'assets/img/contact.jpeg'

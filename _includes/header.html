@@ -9,7 +9,9 @@
   </div>
   <nav class="d-inline-flex align-items-center mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">
+        {% if page.lang == 'pt' %}{{ item.name_pt }}{% else %}{{ item.name }}{% endif %}
+      </a>
     {% endfor %}
 
     <div class="lang-switch">

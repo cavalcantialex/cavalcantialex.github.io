@@ -1,14 +1,22 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Contact</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">
+      {% if page.lang == 'pt' %}Contato{% else %}Contact{% endif %}
+    </h3>
     {% for contact in site.data.settings.contacts %}
     <div class="row g-5 mb-5">
       <div class="col-md-6">
         <!--<h4>{{ contact.name }}</h4>-->
-        <p>{{ contact.title }} | {{ contact.department }}</p>
-        <p>{{ contact.institution }} | {{ contact.institution_address }}</p>
+        <p>
+          {% if page.lang == 'pt' %}{{ contact.title_pt }}{% else %}{{ contact.title }}{% endif %}
+          | {% if page.lang == 'pt' %}{{ contact.department_pt }}{% else %}{{ contact.department }}{% endif %}
+        </p>
+        <p>
+          {% if page.lang == 'pt' %}{{ contact.institution_pt }}{% else %}{{ contact.institution }}{% endif %}
+          | {{ contact.institution_address }}
+        </p>
         <!--<p>Phone: {{ contact.phone }}</p> -->
-        <p>Email: {{ contact.email }}</p>
+        <p>{% if page.lang == 'pt' %}E-mail{% else %}Email{% endif %}: {{ contact.email }}</p>
         <!-- <p>Office: {{ contact.office }}</p> -->
       </div>
       <div class="col-md-6">
