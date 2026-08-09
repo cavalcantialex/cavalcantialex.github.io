@@ -14,6 +14,20 @@ body a {
   color: $linkColor
 }
 
+/* Site name + tagline (in header) */
+.fs-4.fw-bold {
+  color: $linkColor; /* your brown accent, or whatever matches your palette */
+}
+
+header span {
+  color: $linkColor;
+}
+
+/* Section headings like "Updates", "CV", "Education" */
+h3 {
+  color: $linkColor;
+}
+
 .lang-switch {
   display: inline-flex;
   background-color: $accentColor; /* dark green pill background */
@@ -40,4 +54,20 @@ body a {
 
 .lang-btn:hover:not(.active) {
   color: $backgroundColor;
+}
+
+.btn-cv {
+  background-color: $accentColor
+  border-color: $accentColor;
+  color: $accentColor;
+}
+
+.btn-cv:hover {
+  background-color: $accentColor;
+  border-color: $accentColor;
+  color: $backgroundColor;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $linkColor !important;
 }
