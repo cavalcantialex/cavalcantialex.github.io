@@ -1,4 +1,4 @@
-$backgroundColor: #ffffff;
+$backgroundColor: #ddcec6;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 $linkColor: #5d3722 !important;
@@ -27,7 +27,7 @@ body a {
   border-radius: 999px;
   font-size: 0.85rem;
   text-decoration: none;
-  color: #ddcec6;
+  color: $backgroundColor;
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -35,6 +35,7 @@ body a {
   background-color: $backgroundColor;
   color: $accentColor;
   font-weight: 600;
+  color: $backgroundColor;
 }
 
 .lang-btn:hover:not(.active) {
