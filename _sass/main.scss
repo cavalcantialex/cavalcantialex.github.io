@@ -1,8 +1,8 @@
 $backgroundColor: #ddcec6;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$linkColor: #5d3722 !important;
-$accentColor: #731818 !important;
+$linkColor: #5d3722;
+$accentColor: #731818;
 
 body {
   background: $backgroundColor;
@@ -57,7 +57,7 @@ h3 {
 }
 
 .btn-cv {
-  background-color: $accentColor
+  background-color: $backgroundColor;
   border-color: $accentColor;
   color: $accentColor;
 }
