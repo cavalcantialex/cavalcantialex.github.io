@@ -22,7 +22,7 @@ menu:
 social:
 - {icon: 'github', link: 'https://github.com/cavalcantialex'}
 - {icon: 'twitter', link: 'https://twitter.com/cavalcantialexs'}
-- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=MqC5xfEAAAAJ&hl=en'}
+#- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=MqC5xfEAAAAJ&hl=en'}
 
 contacts:
 - name: 'Alexsandra Cavalcanti'
