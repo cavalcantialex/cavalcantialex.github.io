@@ -6,11 +6,20 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">CV</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">
+      {% if page.lang == 'pt' %}Currículo{% else %}CV{% endif %}
+    </h3>
+
+    {% if page.lang == 'pt' %}
+      <p class="mb-4">
+        Este é meu currículo acadêmico em inglês. Para a versão em português, consulte meu
+        <a href="https://lattes.cnpq.br/1499726147270003" target="_blank" rel="noopener noreferrer">Currículo Lattes</a>.
+      </p>
+    {% endif %}
 
     <div class="mb-4">
       <a href="{{ '/assets/pdf/Academic_CV___Alexsandra_Cavalcanti.pdf' | relative_url }}" class="btn btn-cv" download>
-        Download CV (PDF)
+        {% if page.lang == 'pt' %}Baixar CV (PDF){% else %}Download CV (PDF){% endif %}
       </a>
     </div>
 

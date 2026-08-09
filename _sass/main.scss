@@ -41,7 +41,7 @@ h3 {
   border-radius: 999px;
   font-size: 0.85rem;
   text-decoration: none;
-  color: $backgroundColor;
+  color: $accentColor;
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -72,6 +72,14 @@ h3 {
   border-bottom: 1px solid $linkColor !important;
 }
 
-.border-top {
-  border-top: 1px solid $linkColor !important;
+hr {
+  border-color: $linkColor !important;
+  opacity: 1; // Bootstrap's hr defaults to reduced opacity
+}
+
+.home-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
