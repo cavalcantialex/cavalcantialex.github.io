@@ -72,14 +72,13 @@ h3 {
   border-bottom: 1px solid $linkColor !important;
 }
 
-hr {
-  border-color: $linkColor !important;
-  opacity: 1; // Bootstrap's hr defaults to reduced opacity
+.border-top {
+  border-top: 1px solid $linkColor !important;
 }
 
 .home-photo {
   border-radius: 50%;
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
