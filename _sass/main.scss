@@ -1,7 +1,8 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$linkColor: #212529 !important;
+$linkColor: #5d3722 !important;
+$accentColor: #731818 !important;
 
 body {
   background: $backgroundColor;
@@ -11,4 +12,30 @@ body {
 
 body a {
   color: $linkColor
+}
+
+.lang-switch {
+  display: inline-flex;
+  background-color: $accentColor; /* dark green pill background */
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.lang-btn {
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #ddcec6;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-btn.active {
+  background-color: $backgroundColor;
+  color: $accentColor;
+  font-weight: 600;
+}
+
+.lang-btn:hover:not(.active) {
+  color: $backgroundColor;
 }
