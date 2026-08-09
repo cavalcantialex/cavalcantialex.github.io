@@ -7,9 +7,14 @@
       <span>{{ site.description }}</span>
     </a>
   </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+  <nav class="d-inline-flex align-items-center mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
+
+    <div class="lang-switch">
+      <a href="{{ page.url | remove: '/pt' }}" class="lang-btn {% if page.lang == 'en' or page.lang == nil %}active{% endif %}">EN</a>
+      <a href="/pt{{ page.url }}" class="lang-btn {% if page.lang == 'pt' %}active{% endif %}">PT</a>
+    </div>
   </nav>
 </header>
