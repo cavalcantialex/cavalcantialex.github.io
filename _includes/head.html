@@ -9,4 +9,8 @@
   <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <div class="lang-switch">
+  <a href="{{ page.url | remove: '/pt' }}" class="lang-btn {% if page.lang == 'en' or page.lang == nil %}active{% endif %}">EN</a>
+  <a href="/pt{{ page.url }}" class="lang-btn {% if page.lang == 'pt' %}active{% endif %}">PT</a>
+  </div>
 </head>
