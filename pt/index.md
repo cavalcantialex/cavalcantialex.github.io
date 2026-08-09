@@ -2,7 +2,8 @@
 layout: home
 title: "Home"
 lang: pt
-permalink: /pt/contact/
+permalink: /pt/
 ---
 
-Hi! I am a PhD student in Political Science at the University of Rochester. I hold an MSc in Political Science from the Federal University of Pernambuco, Brazil. My research interests include auditing institutions, distributive politics, corruption control, development economics, and causal inference. My current project examines how control institutions influence public policy outcomes by shaping incentives for corruption control.
+Oi! Sou doutoranda em Ciência Política na Universidade de Rochester. Possuo mestrado em Ciência Política pela Universidade Federal de Pernambuco (UFPE). Meus interesses de pesquisa incluem instituições de controle, políticas distributivas, combate à corrupção, economia do desenvolvimento e inferência causal. Meu projeto atual examina como as instituições de controle influenciam os resultados das políticas públicas ao moldar os incentivos para o controle da corrupção.
+

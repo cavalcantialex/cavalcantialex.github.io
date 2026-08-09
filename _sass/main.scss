@@ -49,7 +49,7 @@ h3 {
   background-color: $backgroundColor;
   color: $accentColor;
   font-weight: 600;
-  color: $backgroundColor;
+  color: $accentColor;
 }
 
 .lang-btn:hover:not(.active) {
@@ -70,4 +70,8 @@ h3 {
 
 .border-bottom {
   border-bottom: 1px solid $linkColor !important;
+}
+
+.border-top {
+  border-top: 1px solid $linkColor !important;
 }
