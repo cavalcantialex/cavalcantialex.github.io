@@ -86,3 +86,9 @@ h3 {
 .social-media-icons a {
   text-decoration: none;
 }
+
+.roundmargin-photo {
+  border-radius: 16px; /* adjust for how rounded you want the corners */
+  object-fit: cover;
+  width: 100%;
+}
